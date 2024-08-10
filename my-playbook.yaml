@@ -1,0 +1,9 @@
+---
+- name: My First Playbook
+  hosts: all
+  tasks:
+    - name: Ensure directory exists
+      ansible.builtin.file:
+        path: /home/drtinkerer/shreya-lovely-babi
+        state: directory
+        mode: '0755'
